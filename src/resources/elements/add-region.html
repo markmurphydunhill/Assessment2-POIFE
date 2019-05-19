@@ -1,0 +1,21 @@
+<template>
+  <div class="column">
+    <form submit.trigger="addRegion()" class="ui form stacked segment">
+      <h3 class="ui dividing header"> Add a Region </h3>
+      <div class="field">
+        <label>Region Name </label> <input value.bind="title">
+      </div>
+      <div class="field">
+        <label>Lat </label> <input value.bind="lat">
+      </div>
+      <div class="field">
+        <label>Long </label> <input value.bind="long">
+      </div>
+
+      <button class="ui blue submit button">Add</button>
+    </form>
+  </div>
+
+</template>
+
+

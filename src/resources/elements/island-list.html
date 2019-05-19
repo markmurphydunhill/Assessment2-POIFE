@@ -1,0 +1,34 @@
+<template>
+
+  <div class="column">
+
+    <table class="ui celled table segment">
+
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Long</th>
+        <th>Lat</th>
+        <th>Description</th>
+        <th>Costal Zone</th>
+        <th>Region</th>
+        <th>Creator</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr repeat.for="island of islands">
+        <td>${island.name}</td>
+        <td>${island.long}</td>
+        <td>${island.lat}</td>
+        <td>${island.description}</td>
+        <td>${island.costalZone}</td>
+        <td>${island.region.title}</td>
+        <td>${island.creator.firstName}, ${island.creator.lastName}</td>
+      </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</template>

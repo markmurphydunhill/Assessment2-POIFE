@@ -1,0 +1,21 @@
+<template>
+<require from="../resources/elements/region-list"></require>
+<require from="../resources/elements/add-region"></require>
+
+<div class="ui container">
+  <section class="ui raised segment">
+    <h3 class="ui header"> Regions of Ireland </h3>
+  </section>
+  <div class="ui basic segment">
+    <div class="ui stackable two column grid">
+      <div class="column">
+        <add-region regions.bind="regions"></add-region>
+      </div>
+      <div class="column">
+        <region-list regions.bind="regions"></region-list>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+

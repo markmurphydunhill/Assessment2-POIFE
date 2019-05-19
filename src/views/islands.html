@@ -1,0 +1,20 @@
+<template>
+  <require from="../resources/elements/island-list"></require>
+  <require from="../resources/elements/add-island"></require>
+
+  <div class="ui container">
+    <section class="ui raised segment">
+      <h3 class="ui headder"> Islands of Ireland </h3>
+    </section>
+    <div class="ui basic segment">
+
+        <div class="column">
+          <add-island islands.bind="islands" regions.bind="regions" users.bind="users" ></add-island>
+        </div>
+        <div class="column">
+          <island-list islands.bind="islands"></island-list>
+        </div>
+
+    </div>
+  </div>
+</template>

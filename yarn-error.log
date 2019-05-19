@@ -1,0 +1,149 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/Users/edeleastar/dev/apache-maven-3.6.0/bin:/Users/edeleastar/dev/play-1.5.2:/Users/edeleastar/dev/mongod/bin:/Users/edeleastar/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Users/edeleastar/repos/modules/wit-hdip-comp-sci/ent-web-prj/donation-aurelia/node_modules/.bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.14.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fjest: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:130024:19)
+      at Object.onceWrapper (events.js:273:13)
+      at ClientRequest.emit (events.js:182:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:661:40)
+      at Object.onceWrapper (events.js:273:13)
+      at TLSSocket.emit (events.js:182:13)
+      at TLSSocket.Socket._onTimeout (net.js:449:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+
+npm manifest: 
+  {
+    "name": "donation-aurelia",
+    "description": "An Aurelia client application.",
+    "version": "0.1.0",
+    "repository": {
+      "type": "???",
+      "url": "???"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "aurelia-bootstrapper": "^2.3.0",
+      "aurelia-animator-css": "^1.0.4",
+      "bluebird": "^3.5.2",
+      "aurelia-polyfills": "^1.3.0"
+    },
+    "peerDependencies": {},
+    "devDependencies": {
+      "aurelia-cli": "^1.0.0-beta.12",
+      "aurelia-testing": "^1.0.0",
+      "aurelia-tools": "^2.0.0",
+      "gulp": "^4.0.0",
+      "minimatch": "^3.0.4",
+      "through2": "^2.0.3",
+      "vinyl-fs": "^3.0.3",
+      "ts-loader": "^5.2.1",
+      "ts-node": "^7.0.1",
+      "@types/bluebird": "^3.5.24",
+      "@types/node": "^10.11.6",
+      "@types/lodash": "^4.14.117",
+      "@types/webpack": "^4.4.15",
+      "typescript": "^3.1.2",
+      "jest": "^23.6.0",
+      "jest-cli": "^23.6.0",
+      "plugin-error": "^1.0.1",
+      "aurelia-loader-nodejs": "^1.0.1",
+      "aurelia-pal-nodejs": "^1.1.1",
+      "ts-jest": "^23.10.4",
+      "@types/jest": "^23.3.5",
+      "jasmine-core": "^3.2.1",
+      "karma": "^3.0.0",
+      "karma-chrome-launcher": "^2.2.0",
+      "karma-coverage": "latest",
+      "karma-jasmine": "^2.0.1",
+      "karma-mocha-reporter": "latest",
+      "karma-webpack": "^3.0.5",
+      "karma-coverage-istanbul-reporter": "^2.0.4",
+      "jest-jasmine2": "^23.6.0",
+      "jest-matchers": "^20.0.3",
+      "karma-typescript-preprocessor": "^0.4.0",
+      "gulp-rename": "^1.4.0",
+      "html-webpack-plugin": "^3.2.0",
+      "copy-webpack-plugin": "^4.5.2",
+      "mini-css-extract-plugin": "^0.4.3",
+      "aurelia-webpack-plugin": "^3.0.0",
+      "duplicate-package-checker-webpack-plugin": "^3.0.0",
+      "webpack": "^4.27.0",
+      "webpack-cli": "^3.1.2",
+      "webpack-dev-server": "^3.1.9",
+      "expose-loader": "^0.7.5",
+      "style-loader": "^0.23.1",
+      "url-loader": "^1.1.1",
+      "del": "^3.0.0",
+      "css-loader": "^1.0.0",
+      "nps": "^5.9.3",
+      "nps-utils": "^1.7.0",
+      "file-loader": "^2.0.0",
+      "json-loader": "^0.5.7",
+      "html-loader": "^0.5.5",
+      "istanbul-instrumenter-loader": "^3.0.1",
+      "opn": "^5.4.0",
+      "webpack-bundle-analyzer": "latest"
+    },
+    "jest": {
+      "modulePaths": [
+        "<rootDir>/src",
+        "<rootDir>/node_modules"
+      ],
+      "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+      ],
+      "transform": {
+        "^.+\\.ts$": "ts-jest"
+      },
+      "testRegex": "\\.spec\\.(ts|js)$",
+      "setupFiles": [
+        "<rootDir>/test/jest-pretest.ts"
+      ],
+      "testEnvironment": "node",
+      "collectCoverage": true,
+      "collectCoverageFrom": [
+        "src/**/*.{js,ts}",
+        "!**/*.spec.{js,ts}",
+        "!**/node_modules/**",
+        "!**/test/**"
+      ],
+      "coverageDirectory": "<rootDir>/test/coverage-jest",
+      "coverageReporters": [
+        "json",
+        "lcov",
+        "text",
+        "html"
+      ]
+    },
+    "engines": {
+      "node": ">= 6.0.0"
+    },
+    "scripts": {
+      "start": "nps",
+      "test": "nps test"
+    },
+    "main": "dist/app.bundle.js"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

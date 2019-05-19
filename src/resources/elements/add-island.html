@@ -1,0 +1,63 @@
+<template>
+
+
+
+  <section class="ui raised segment">
+    <div class="ui grid ">
+      <div class="ui form sixteen wide column">
+        <div class="ui stacked segment">
+          <form submit.trigger="addIsland()" class="ui form stacked segment">
+
+            <div class="ui header">
+              <label>Add Island Details</label>
+            </div>
+
+
+              <div class="three fields">
+                <div class="field">
+                  <label>Name </label> <input value.bind="name">
+                </div>
+                <div class="field">
+                  <label>Lat </label> <input value.bind="lat">
+                </div>
+                <div class="field">
+                  <label>Long </label> <input value.bind="long">
+                </div>
+
+              </div>
+
+            <div class="two fields">
+              <div class="field">
+                <label>Description </label> <input value.bind="description">
+              </div>
+              <div class="field">
+                <label>Costal Zone </label> <input value.bind="costalZone">
+              </div>
+
+            </div>
+
+
+
+
+            <h4 class="ui dividing header"> Select Region </h4>
+            <div class="grouped inline fields">
+              <div class="field" repeat.for="region of regions">
+                <div class="ui radio checkbox">
+                  <input type="radio" model.bind="region" checked.bind="selectedRegion">
+                  <label>${region.title}</label>
+                </div>
+              </div>
+
+
+
+
+            <button class="ui blue submit button">Add Island</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</template>
+
+
